@@ -110,7 +110,7 @@ tests/
 
 ## 📚 References
 
-- [Go Style Guide](https://github.com/golang/go/wiki/CodeReviewComments)
+- [Go Style Guide](https://google.github.io/styleguide/go/)
 - [Effective Go](https://go.dev/doc/effective_go)
 - [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
 - [Testify](https://github.com/stretchr/testify)

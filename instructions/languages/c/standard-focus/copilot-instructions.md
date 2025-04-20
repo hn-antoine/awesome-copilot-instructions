@@ -79,8 +79,6 @@ build/
 - [ISO C Standard (C17 Draft)](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2310.pdf)
 - [GNU C Library Documentation](https://www.gnu.org/software/libc/manual/)
 - [Modern C by Jens Gustedt (Open Access)](https://gustedt.gitlabpages.inria.fr/modern-c/)
-- [The C Programming Language by Kernighan and Ritchie](https://en.wikipedia.org/wiki/The_C_Programming_Language)
-- [Embedded C Coding Standard by Barr Group](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard)
 - [Valgrind Memory Debugger](https://valgrind.org/)
 - [Unity Test Framework for C](https://github.com/ThrowTheSwitch/Unity)
 - [Check Unit Testing Framework](https://libcheck.github.io/check/)
