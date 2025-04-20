@@ -84,7 +84,6 @@ tests/
 ## 📚 References
 
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
-- [Effective TypeScript](https://effectivetypescript.com/)
 - [Zod Docs](https://zod.dev/)
 - [Jest Docs](https://jestjs.io/docs/getting-started)
 - [Project Style Guide](https://ts.dev/style/)

@@ -99,4 +99,4 @@ src/
 - [MockK](https://mockk.io/)
 - [Kotest](https://kotest.io/docs/)
 - [Coroutines Guide](https://kotlinlang.org/docs/coroutines-guide.html)
-- [KDoc Reference](https://kotlinlang.org/docs/kdoc.html)
+- [KDoc Reference](https://kotlinlang.org/docs/kotlin-doc.html)

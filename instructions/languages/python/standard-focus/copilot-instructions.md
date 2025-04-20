@@ -6,7 +6,7 @@ These instructions define how GitHub Copilot should assist with this project. Th
 
 - **Project Type**: Web API / Data Pipeline / CLI Tool / ML App
 - **Language**: Python
-- **Framework / Libraries**: FastAPI / Flask / Django / Pandas / SQLAlchemy / Pydantic
+- **Framework / Libraries**: FastAPI / Flask / Django / Pandas / Pydantic / Poetry
 - **Architecture**: MVC / Clean Architecture / Event-Driven / Microservices
 
 ## 🔧 General Guidelines
@@ -70,7 +70,6 @@ tests/
 - `Copilot, write a Pydantic model for a product with id, name, and optional price.`
 - `Copilot, implement a CLI command that uploads a CSV file and logs a summary.`
 - `Copilot, write a pytest test for the transform_data function using a mock input.`
-- `Copilot, create a SQLAlchemy repository class for CRUD operations on orders.`
 
 ## 🔁 Iteration & Review
 
@@ -90,4 +89,4 @@ tests/
 - [Pydantic Documentation](https://docs.pydantic.dev/)
 - [Python Logging Best Practices](https://docs.python.org/3/howto/logging.html)
 - [Black Code Formatter](https://black.readthedocs.io/)
-- [SQLAlchemy ORM Guide](https://docs.sqlalchemy.org/en/20/orm/)
+- [Poetry](https://python-poetry.org/docs/)

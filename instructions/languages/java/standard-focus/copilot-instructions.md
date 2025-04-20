@@ -91,7 +91,6 @@ src/
 
 ## 📚 References
 
-- [Effective Java (Joshua Bloch)](https://www.oreilly.com/library/view/effective-java/9780134686097/)
 - [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 - [Java Language Specification](https://docs.oracle.com/javase/specs/)
 - [Java Code Conventions (Oracle)](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)
