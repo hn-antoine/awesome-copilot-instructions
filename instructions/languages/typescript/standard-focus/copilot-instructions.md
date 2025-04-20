@@ -21,6 +21,7 @@ These instructions define how GitHub Copilot should assist with this TypeScript 
 ## 📁 File Structure
 
 Use this structure as a guide when creating or updating files:
+
 ```text
 src/
   controllers/

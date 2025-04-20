@@ -70,10 +70,10 @@ tests/
 - Prefer TDD for critical business logic and application services.
 
 ## 🧩 Example Prompts
-- Copilot, generate an ASP.NET Core controller with CRUD endpoints for Product.
-- Copilot, implement a MediatR command handler for creating a new order.
-- Copilot, create an Entity Framework Core DbContext for a blog application.
-- Copilot, write an xUnit test for the CalculateInvoiceTotal method.
+- `Copilot, generate an ASP.NET Core controller with CRUD endpoints for Product.`
+- `Copilot, implement a MediatR command handler for creating a new order.`
+- `Copilot, create an Entity Framework Core DbContext for a blog application.`
+- `Copilot, write an xUnit test for the CalculateInvoiceTotal method.`
 
 ## 🔁 Iteration & Review
 - Copilot output should be reviewed and modified before committing.

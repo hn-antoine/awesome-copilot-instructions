@@ -35,7 +35,7 @@ tests/
 
 ## 🧶 Patterns
 
-✅ Patterns to Follow
+### ✅ Patterns to Follow
 - Use [pattern] (e.g., Repository Pattern, Dependency Injection, Pub/Sub).
 - For APIs, include:
 - Input validation with [e.g. Zod / Pydantic]
@@ -45,7 +45,7 @@ tests/
 - Components should be pure and reusable
 - Avoid inline styling; use [Tailwind / CSS Modules / styled-components]
 
-🚫 Patterns to Avoid
+### 🚫 Patterns to Avoid
 - Don't generate code without tests.
 - Don't hardcode values; use config/env files.
 - Avoid global state unless absolutely necessary.
@@ -59,11 +59,8 @@ tests/
 ## 🧩 Example Prompts
 
 - `Copilot, create a REST endpoint using Express that retrieves all books from the books table.`
-
 - `Copilot, generate a Zod schema for a user profile with optional avatar and required name/email.`
-
 - `Copilot, implement a React hook to debounce a search input.`
-
 - `Copilot, write a unit test for the calculatePrice() function using mocked dependencies.`
 
 ## 🔁 Iteration & Review

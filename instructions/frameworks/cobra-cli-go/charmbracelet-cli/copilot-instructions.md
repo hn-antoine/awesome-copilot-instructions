@@ -4,10 +4,10 @@ These instructions define how GitHub Copilot should assist with this Go project.
 
 ## 🧠 Context
 
-- **Project Type**: CLI Tool / REST API / Microservice
+- **Project Type**: CLI Tool
 - **Language**: Go
-- **Framework / Libraries**: net/http, gorilla/mux, cobra, go.uber.org/zap, sqlx, testify
-- **Architecture**: Clean Architecture with Repository Pattern
+- **Framework / Libraries**: cobra, testify, charmbracelet/bubbles
+- **Architecture**: Modular MVU (Model-View-Update) + Command Pattern
 
 ## 🔧 General Guidelines
 
@@ -19,14 +19,47 @@ These instructions define how GitHub Copilot should assist with this Go project.
 - Avoid unnecessary abstraction; keep things simple and readable.
 - Use `context.Context` for request-scoped values and cancellation.
 
+## 👾 TUI Guidelines
+
+- **Component Structure:**
+  - Each distinct UI element or view should generally be implemented as its own `bubble`.
+  - Follow the standard `bubbles` pattern:
+    - `Model`: Struct containing the component's state.
+    - `Init()`: Returns the initial command (often `nil`).
+    - `Update(msg tea.Msg)`: Handles incoming messages/events and updates the model. Returns `(tea.Model, tea.Cmd)`.
+    - `View()`: Renders the component's UI as a string based on the current model state.
+  - Keep `Update` functions focused; delegate complex logic to helper methods or separate functions.
+  - Use `tea.BatchMsg` to batch multiple commands returned from `Update`.
+
+- **State Management:**
+  - Prefer local state within each component's `Model`.
+  - For shared state or communication between components, use `tea.Msg` passing:
+    - Parent components can pass messages down during their `Update`.
+    - Child components can send messages up for the parent (or root) `Update` function to handle.
+  - Avoid global state for TUI components. If necessary, inject shared dependencies (like services or data repositories) into the root TUI model during initialization.
+
+- **Interaction & Messages:**
+  - Define custom `tea.Msg` types (structs or simple types) for specific application events (e.g., `dataLoadedMsg`, `errorOccurredMsg`, `itemSelectedMsg`).
+  - Use `tea.KeyMsg` for handling keyboard input within `Update`. Check `key.Type` or use `key.Matches`.
+  - Commands (`tea.Cmd`) should be used for I/O operations (API calls, DB access, timers) to avoid blocking the `Update` loop. The results of these commands should be sent back as `tea.Msg`.
+
+- **Styling:**
+  - Use `lipgloss` for styling text, borders, layouts, etc.
+  - Define reusable styles in `internal/util/styles.go` and reference them within component `View` methods.
+  - Ensure styles adapt reasonably to different terminal sizes where possible.
+
+- **Layout:**
+  - Use `lipgloss` functions like `lipgloss.JoinVertical`, `lipgloss.JoinHorizontal`, and `lipgloss.Place` for arranging components.
+
 ## 📁 File Structure
 
 Use this structure as a guide when creating or updating files:
 
 ```text
+app/
+  app.go
 cmd/
-  myapp/
-    main.go
+  root.go
 internal/
   controller/
   service/
@@ -49,7 +82,7 @@ tests/
 - Use **Clean Architecture** and **Repository Pattern**.
 - Implement input validation using Go structs and validation tags (e.g., [go-playground/validator](https://github.com/go-playground/validator)).
 - Use custom error types for wrapping and handling business logic errors.
-- Logging should be handled via `zap` or `log/slog`.
+- Logging should be handled via `charmbracelet/log`.
 - Use dependency injection via constructors (avoid global state).
 - Keep `main.go` minimal—delegate to `internal`.
 
@@ -68,17 +101,6 @@ tests/
 - Include table-driven tests for functions with many input variants.
 - Follow TDD for core business logic.
 
-## 🧩 Example Prompts
-- `Copilot, generate a REST endpoint using gorilla/mux that returns a list of users from a repository.`
-
-- `Copilot, write a Go struct for user registration input with validation tags for email and required password.`
-
-- `Copilot, implement a Cobra CLI command called ‘serve’ that reads config from environment variables.`
-
-- `Copilot, write a unit test for the CalculateDiscount function with multiple input cases using testify.`
-
-- `Copilot, create a repository interface and its SQLX implementation for managing books.`
-
 ## 🔁 Iteration & Review
 
 - Review Copilot output before committing.
@@ -91,6 +113,6 @@ tests/
 - [Go Style Guide](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Effective Go](https://go.dev/doc/effective_go)
 - [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
-- [Zap Logger](https://pkg.go.dev/go.uber.org/zap)
 - [Testify](https://github.com/stretchr/testify)
 - [Go Validator](https://github.com/go-playground/validator)
+- [Charmbracelet Bubbletea Documentation](https://pkg.go.dev/github.com/charmbracelet/bubbletea)
