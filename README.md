@@ -18,7 +18,7 @@
 
 # Why copilot-instructions.md files?
 
-copilot-instructions.md files help guide GitHub Copilot by providing contextual details about your repository such as the type of workflow your team follows, tools and other project specific details such as coding style, frameworks used or project specific rules.
+`copilot-instructions.md` files help guide GitHub Copilot by providing contextual details about your repository such as the type of workflow your team follows, tools and other project specific details such as coding style, frameworks used or project specific rules.
 
 > [!TIP]
 > Learn more about Copilot Instructions [here](https://code.visualstudio.com/docs/copilot/copilot-customization).

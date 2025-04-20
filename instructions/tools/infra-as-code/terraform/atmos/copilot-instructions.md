@@ -98,10 +98,10 @@ terraform/
 
 ## 📚 References
 
-- [Atmos Documentation](https://atmos.tools/)
+- [Atmos Documentation](https://atmos.tools/cli)
 - [Terraform Language Docs](https://developer.hashicorp.com/terraform/language)
-- [CloudPosse Component Catalog](https://github.com/cloudposse/components)
-- [Atmos Stack Examples](https://github.com/cloudposse/atmos-reference)
+- [Terraform Best Practices](https://atmos.tools/best-practices/terraform/)
+- [Atmos Stack Cheatsheet](https://atmos.tools/cheatsheets/stacks)
 - [TFLint](https://github.com/terraform-linters/tflint)
 - [Checkov](https://www.checkov.io/)
 - [Yamllint](https://yamllint.readthedocs.io/)
