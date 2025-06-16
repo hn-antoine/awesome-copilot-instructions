@@ -87,6 +87,11 @@
 
 ## Tools
 
+### Content Management Systems (CMS)
+
+#### Drupal
+- [Standard Focus](instructions/tools/cms/drupal/standard-focus/copilot-instructions.md)
+
 ### Infra as Code (IaC)
 
 #### Terraform
