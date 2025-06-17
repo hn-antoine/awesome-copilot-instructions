@@ -6,11 +6,12 @@ These instructions define how GitHub Copilot should assist with this Drupal proj
 
 - **Project Type**: Content Management System / Website / Web Application
 - **Platform**: Drupal 11
-- **Development Environment**: DDEV
-- **Backend**: PHP
 - **Framework / Libraries**: Symfony Components / Drupal Core APIs
 - **Database**: MySQL / MariaDB
+- **Backend**: PHP
 - **Frontend**: Twig / HTML / CSS / JavaScript
+- **Development Environment**: DDEV
+- **Command runner**: just
 - **Architecture**: Modular / Hook-based / Entity-driven / Service-oriented
 
 ## 🔧 General Guidelines
@@ -144,3 +145,5 @@ config/
 - [Testing in Drupal](https://www.drupal.org/docs/testing)
 - [Drupal Console](https://drupalconsole.com/)
 - [Drush Documentation](https://www.drush.org/)
+- [DDEV Documentation](https://ddev.readthedocs.io/en/stable/)
+- [Just a command runner](https://github.com/casey/just)
