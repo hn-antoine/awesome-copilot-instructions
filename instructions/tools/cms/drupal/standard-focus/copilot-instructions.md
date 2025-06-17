@@ -5,8 +5,12 @@ These instructions define how GitHub Copilot should assist with this Drupal proj
 ## 🧠 Context
 
 - **Project Type**: Content Management System / Website / Web Application
-- **Language / Tool**: PHP / Drupal
-- **Framework / Libraries**: Drupal Core / Views / Commerce / Paragraphs / Entity API / Form API
+- **Platform**: Drupal 11
+- **Development Environment**: DDEV
+- **Backend**: PHP
+- **Framework / Libraries**: Symfony Components / Drupal Core APIs
+- **Database**: MySQL / MariaDB
+- **Frontend**: Twig / HTML / CSS / JavaScript
 - **Architecture**: Modular / Hook-based / Entity-driven / Service-oriented
 
 ## 🔧 General Guidelines
@@ -18,6 +22,8 @@ These instructions define how GitHub Copilot should assist with this Drupal proj
 - Follow the "Drupal way" - leverage existing systems rather than reinventing.
 - Use `drupal/coder` for code formatting and standards compliance.
 - Document all public functions with proper PHPDoc comments.
+- Prefer vanilla JavaScript over jQuery - use modern ES6+ features and native DOM APIs.
+- Use Drupal's JavaScript API and behaviors (`Drupal.behaviors`) for frontend functionality.
 
 ## 📁 File Structure
 
@@ -35,6 +41,7 @@ web/
           Plugin/
           Service/
         templates/
+        js/
         config/
           install/
           schema/
@@ -42,6 +49,7 @@ web/
         my_module.module
         my_module.routing.yml
         my_module.services.yml
+        my_module.libraries.yml
   themes/
     custom/
       my_theme/
@@ -52,6 +60,7 @@ web/
         images/
         my_theme.info.yml
         my_theme.theme
+        my_theme.libraries.yml
 config/
   sync/
     core.entity_form_display.*
@@ -73,6 +82,7 @@ config/
 - Follow security best practices - sanitize output, validate input, check permissions.
 - Use Render API for all HTML output (`#type`, `#theme`, render arrays).
 - Create Plugin systems for extensible functionality.
+- Implement JavaScript using `Drupal.behaviors` for proper initialization and AJAX compatibility.
 
 ### 🚫 Patterns to Avoid
 
@@ -84,6 +94,7 @@ config/
 - Avoid writing to files outside of designated directories.
 - Don't ignore caching - implement proper cache invalidation.
 - Avoid mixing business logic with presentation layer.
+- Don't use jQuery unless absolutely necessary - prefer vanilla JavaScript and modern DOM APIs.
 
 ## 🧪 Testing Guidelines
 
@@ -104,6 +115,8 @@ config/
 - `Copilot, generate a Drupal theme template that displays a custom content type with proper field rendering.`
 - `Copilot, write a Drupal configuration entity for storing API settings with a settings form.`
 - `Copilot, implement a custom Drupal field type for storing and displaying social media links.`
+- `Copilot, create a Drupal behavior using vanilla JavaScript to add interactive functionality to a form.`
+- `Copilot, implement a JavaScript function using fetch() API to make AJAX calls to a Drupal REST endpoint.`
 
 ## 🔁 Iteration & Review
 
@@ -118,6 +131,9 @@ config/
 
 - [Drupal API Documentation](https://api.drupal.org/)
 - [Drupal Coding Standards](https://www.drupal.org/docs/develop/standards/coding-standards)
+- [Drupal JavaScript Coding Standards](https://www.drupal.org/docs/develop/standards/javascript)
+- [Drupal JavaScript API and Behaviors](https://www.drupal.org/docs/drupal-apis/javascript-api)
+- [Managing JavaScript in Drupal](https://www.drupal.org/docs/theming-drupal/adding-stylesheets-css-and-javascript-js-to-a-drupal-theme)
 - [Drupal Security Best Practices](https://www.drupal.org/docs/security-in-drupal)
 - [Form API Reference](https://api.drupal.org/api/drupal/core%21core.api.php/group/form_api)
 - [Entity API Documentation](https://www.drupal.org/docs/drupal-apis/entity-api)
