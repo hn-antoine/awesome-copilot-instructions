@@ -90,7 +90,7 @@
 ### Content Management Systems (CMS)
 
 #### Drupal
-- [Standard Focus](instructions/tools/cms/drupal/standard-focus/copilot-instructions.md)
+- [Standard Focus for Drupal 11](instructions/tools/cms/drupal/11/standard-focus/copilot-instructions.md)
 
 ### Infra as Code (IaC)
 
