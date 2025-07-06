@@ -30,6 +30,7 @@
   - [Language & Stack](#language--stack)
   - [Framework / Library](#framework--library)
   - [Tools](#tools)
+  - [Workflows](#workflows)
 
 # Copilot Instructions
 
@@ -98,6 +99,17 @@
 - [Standard Focus](instructions/tools/infra-as-code/terraform/standard-focus/copilot-instructions.md)
 - [Atmos](instructions/tools/infra-as-code/terraform/atmos/copilot-instructions.md)
 
+## Workflows
+
+### AI Development Tasks
+*Adapted from [snarktank/ai-dev-tasks](https://github.com/snarktank/ai-dev-tasks)*
+
+A comprehensive workflow for AI-assisted development featuring structured approaches to planning, task generation, and execution:
+
+- [PRD Creation](instructions/workflows/ai-development-tasks/prd-creation/prd-creation.instructions.md) - Create detailed Product Requirements Documents ([prompt](instructions/workflows/ai-development-tasks/prd-creation/prd-creation.prompt.md))
+- [Task Generation](instructions/workflows/ai-development-tasks/task-generation/task-generation.instructions.md) - Break PRDs into actionable development tasks ([prompt](instructions/workflows/ai-development-tasks/task-generation/task-generation.prompt.md))
+- [Task Execution](instructions/workflows/ai-development-tasks/task-execution/task-execution.instructions.md) - Systematic task execution with proper testing and git practices ([prompt](instructions/workflows/ai-development-tasks/task-execution/task-execution.prompt.md))
+
 # How to Use
 
 ## Setup Copilot in VSCode
@@ -110,11 +122,19 @@
 ## Setup Instructions
 
 1. Set the `github.copilot.chat.codeGeneration.useInstructionFiles` setting to `true` to instruct Copilot in VS Code to use the custom instructions file.
-2. Add the instructions file in `.github/copilot-instructions.md` at the root of your workspace. If needed, create a `.github` directory first.
+2. Create instruction files using the latest naming conventions:
+   - **Workspace instructions**: Place `*.instructions.md` files in `.github/instructions/` directory
+   - **Workspace prompts**: Place `*.prompt.md` files in `.github/prompts/` directory
+   - **Legacy format**: `.github/copilot-instructions.md` (still supported)
+
+### File Types
+- **`.instructions.md`**: Contextual instructions that apply to specific files or file types
+- **`.prompt.md`**: Reusable prompts for specific tasks or workflows
+- **Front matter**: Use YAML front matter to specify metadata like `applyTo`, `mode`, and `description`
 
 > [!TIP]
-> Read more [here](https://code.visualstudio.com/docs/copilot/copilot-customization).
+> Read more about the latest naming conventions [here](https://code.visualstudio.com/docs/copilot/copilot-customization).
 
 # Contributing
 
-All contributions are welcome! If you would like to share a copilot-instructions.md file, see the [contribution guide](CONTRIBUTING.md) for details.
+All contributions are welcome! If you would like to share instruction files (`.instructions.md`) or prompt files (`.prompt.md`), see the [contribution guide](CONTRIBUTING.md) for details.
