@@ -12,11 +12,13 @@ This workflow provides a systematic approach to executing development tasks gene
 ## Core Principles
 
 ### One Task at a Time
+
 - **Execute one sub-task at a time** - Do not start the next sub-task until the current one is complete
 - **Seek approval** - Ask for user permission before starting each new sub-task
 - **Wait for confirmation** - User must respond "yes", "y", or equivalent before proceeding
 
 ### Progress Tracking
+
 - **Update immediately** - Mark tasks as completed `[x]` as soon as they're finished
 - **Maintain accuracy** - Keep the task list current and accurate
 - **Document changes** - Update the "Relevant Files" section with every modification
@@ -24,21 +26,25 @@ This workflow provides a systematic approach to executing development tasks gene
 ## Task Execution Protocol
 
 ### Step 1: Task Selection
+
 1. Identify the next available task (not blocked by dependencies)
 2. Review task requirements and acceptance criteria
 3. Confirm prerequisites are met
 4. Ask user for permission to proceed
 
 ### Step 2: Implementation
+
 1. **Plan the approach** - Outline implementation strategy
 2. **Implement the feature** - Write code using GitHub Copilot
 3. **Test locally** - Verify functionality works as expected
 4. **Mark sub-task complete** - Update task list with `[x]`
 
 ### Step 3: Completion Protocol
+
 When **all sub-tasks** under a parent task are marked `[x]`:
 
 1. **Run full test suite**
+
    ```bash
    # Examples for different frameworks
    pytest                 # Python
@@ -54,6 +60,7 @@ When **all sub-tasks** under a parent task are marked `[x]`:
 5. **Commit with structured message** - Use conventional commit format
 
 ### Step 4: Git Commit Guidelines
+
 Use single-line format with multiple `-m` flags:
 
 ```bash
@@ -64,12 +71,14 @@ git commit -m "feat: add payment validation logic" \
 ```
 
 #### Commit Message Structure
+
 - **Type**: `feat`, `fix`, `refactor`, `test`, `docs`, `style`, `perf`
 - **Summary**: Brief description of what was accomplished
 - **Details**: Key changes and additions (use additional `-m` flags)
 - **Reference**: Task number and PRD context
 
 ### Step 5: Parent Task Completion
+
 1. Mark **parent task** as completed `[x]`
 2. Update relevant files list
 3. Ask user permission for next task
@@ -77,6 +86,7 @@ git commit -m "feat: add payment validation logic" \
 ## Task List Management
 
 ### Status Updates
+
 ```markdown
 - [x] **T001: Completed Task**
   - [x] Completed sub-task 1
@@ -89,6 +99,7 @@ git commit -m "feat: add payment validation logic" \
 ```
 
 ### Relevant Files Section
+
 Maintain an up-to-date list of all files created or modified:
 
 ```markdown
@@ -102,13 +113,15 @@ Maintain an up-to-date list of all files created or modified:
 ## GitHub Copilot Integration
 
 ### Effective Prompting
+
 1. **Context Setting**: Reference the current task and PRD section
 2. **Specific Requests**: Ask for precise implementations
 3. **Code Review**: Request validation against requirements
 4. **Testing**: Generate appropriate test cases
 
 ### Example Prompts
-```
+
+```javascript
 // Context setting
 "Based on task T005 in the PRD, I need to implement user authentication..."
 
@@ -125,6 +138,7 @@ Maintain an up-to-date list of all files created or modified:
 ## Quality Assurance
 
 ### Before Marking Tasks Complete
+
 - [ ] Functionality works as specified in PRD
 - [ ] All edge cases are handled
 - [ ] Error handling is implemented
@@ -133,6 +147,7 @@ Maintain an up-to-date list of all files created or modified:
 - [ ] Documentation is updated
 
 ### Testing Strategy
+
 1. **Unit Tests** - Test individual functions and components
 2. **Integration Tests** - Test component interactions
 3. **End-to-End Tests** - Test complete user workflows
@@ -141,6 +156,7 @@ Maintain an up-to-date list of all files created or modified:
 ## Common Execution Patterns
 
 ### Frontend Task Execution
+
 1. Create component structure
 2. Implement functionality
 3. Add styling and responsive design
@@ -150,6 +166,7 @@ Maintain an up-to-date list of all files created or modified:
 7. Update documentation
 
 ### Backend Task Execution
+
 1. Define API endpoints
 2. Implement business logic
 3. Add data validation
@@ -159,6 +176,7 @@ Maintain an up-to-date list of all files created or modified:
 7. Update API documentation
 
 ### Database Task Execution
+
 1. Design schema changes
 2. Create migration scripts
 3. Update models/entities
@@ -170,6 +188,7 @@ Maintain an up-to-date list of all files created or modified:
 ## Error Handling and Troubleshooting
 
 ### When Tests Fail
+
 1. **Do not commit** - Fix issues before staging changes
 2. **Debug systematically** - Isolate the problem
 3. **Check dependencies** - Ensure all requirements are met
@@ -177,6 +196,7 @@ Maintain an up-to-date list of all files created or modified:
 5. **Ask for help** - Request user guidance if stuck
 
 ### When Tasks Are Blocked
+
 1. **Identify blocker** - Document what's preventing progress
 2. **Communicate clearly** - Explain the issue to user
 3. **Propose solutions** - Suggest alternatives or workarounds
@@ -185,6 +205,7 @@ Maintain an up-to-date list of all files created or modified:
 ## Best Practices
 
 ### Code Quality
+
 - Follow existing code style and conventions
 - Write self-documenting code with clear variable names
 - Add appropriate error handling
@@ -192,18 +213,21 @@ Maintain an up-to-date list of all files created or modified:
 - Keep functions small and focused
 
 ### Git Practices
+
 - Make atomic commits (one logical change per commit)
 - Write clear, descriptive commit messages
 - Test before committing
 - Keep commit history clean and meaningful
 
 ### Documentation
+
 - Update README files as needed
 - Document API changes
 - Add inline code documentation
 - Keep architecture decisions recorded
 
 ### Communication
+
 - Ask for clarification when requirements are unclear
 - Provide regular progress updates
 - Explain implementation decisions
@@ -212,6 +236,7 @@ Maintain an up-to-date list of all files created or modified:
 ## Workflow Integration
 
 This task execution workflow integrates with:
+
 - **PRD Creation**: Reference PRD sections during implementation
 - **Task Generation**: Follow task breakdown and dependencies
 - **Code Review**: Validate implementations against PRD requirements

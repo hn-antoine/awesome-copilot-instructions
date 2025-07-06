@@ -36,6 +36,7 @@ tests/
 ## 🧶 Patterns
 
 ### ✅ Patterns to Follow
+
 - Use [pattern] (e.g., Repository Pattern, Dependency Injection, Pub/Sub).
 - For APIs, include:
 - Input validation with [e.g. Zod / Pydantic]
@@ -46,12 +47,14 @@ tests/
 - Avoid inline styling; use [Tailwind / CSS Modules / styled-components]
 
 ### 🚫 Patterns to Avoid
+
 - Don't generate code without tests.
 - Don't hardcode values; use config/env files.
 - Avoid global state unless absolutely necessary.
 - Don't expose secrets or keys.
 
 ## 🧪 Testing Guidelines
+
 - Use [Jest / Pytest / Go Test] for unit and integration tests.
 - Prefer test-driven development (TDD) when modifying core logic.
 - Include mocks/stubs for third-party services.
@@ -64,11 +67,13 @@ tests/
 - `Copilot, write a unit test for the calculatePrice() function using mocked dependencies.`
 
 ## 🔁 Iteration & Review
+
 - Copilot output should be reviewed and modified before committing.
 - If code isn’t following these instructions, regenerate with more context or split the task.
 - Use comments to clarify intent before invoking Copilot.
 
 ## 📚 References
+
 - [Link to style guide]
 - [Link to framework docs]
 - [Link to existing example files in the repo]

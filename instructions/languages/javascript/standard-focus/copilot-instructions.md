@@ -36,6 +36,7 @@ tests/
 ## 🧶 Patterns
 
 ### ✅ Patterns to Follow
+
 - Use Dependency Injection and Repository Pattern where applicable.
 - For APIs, include:
 - Input validation with Joi / express-validator
@@ -46,28 +47,33 @@ tests/
 - Avoid inline styling; use Tailwind / CSS Modules / styled-components
 
 ### 🚫 Patterns to Avoid
+
 - Don’t generate code without tests.
 - Don’t hardcode values; use config/env files.
 - Avoid global state unless absolutely necessary.
 - Don’t expose secrets or keys.
 
 ## 🧪 Testing Guidelines
+
 - Use Jest for unit and integration tests.
 - Prefer test-driven development (TDD) when modifying core logic.
 - Include mocks/stubs for third-party services.
 
 ## 🧩 Example Prompts
+
 - `Copilot, create a REST endpoint using Express that retrieves all books from the books table.`
 - `Copilot, generate a Joi schema for a user profile with optional avatar and required name/email.`
 - `Copilot, implement a React hook to debounce a search input.`
 - `Copilot, write a unit test for the calculatePrice() function using mocked dependencies.`
 
 ## 🔁 Iteration & Review
+
 - Copilot output should be reviewed and modified before committing.
 - If code isn’t following these instructions, regenerate with more context or split the task.
 - Use comments to clarify intent before invoking Copilot.
 
 ## 📚 References
+
 - [JavaScript Style Guide (Airbnb)](https://github.com/airbnb/javascript)
 - [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 - [Node.js Documentation](https://nodejs.org/en/docs)

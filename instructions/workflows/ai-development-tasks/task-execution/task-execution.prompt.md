@@ -54,6 +54,7 @@ git commit -m "feat: add user authentication endpoint" \
 **User:** "Start working on the task list"
 
 **Your Response:**
+
 1. Review task list and identify first available task
 2. Ask: "Ready to start T001: Project Setup?"
 3. Implement each sub-task one at a time

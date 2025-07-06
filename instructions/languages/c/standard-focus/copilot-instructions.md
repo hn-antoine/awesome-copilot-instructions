@@ -39,6 +39,7 @@ build/
 ## 🧶 Patterns
 
 ### ✅ Patterns to Follow
+
 - Use modular design with `.c` and `.h` pairs.
 - Encapsulate functionality behind clean interfaces.
 - Prefer stack memory where possible; use `malloc` only when needed.
@@ -47,6 +48,7 @@ build/
 - Centralize configuration in `config.h`.
 
 ### 🚫 Patterns to Avoid
+
 - Don’t use `goto` unless absolutely necessary (e.g., error cleanup).
 - Avoid global variables unless required (e.g., ISR flags).
 - Don’t write logic directly in `main()`.

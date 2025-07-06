@@ -11,7 +11,7 @@ These instructions define how GitHub Copilot should assist with this Go project.
 
 ## 🔧 General Guidelines
 
-- Follow idiomatic Go conventions (https://go.dev/doc/effective_go).
+- Follow idiomatic Go conventions (<https://go.dev/doc/effective_go>).
 - Use named functions over long anonymous ones.
 - Organize logic into small, composable functions.
 - Prefer interfaces for dependencies to enable mocking and testing.
@@ -79,6 +79,7 @@ tests/
 ## 🧶 Patterns
 
 ### ✅ Patterns to Follow
+
 - Use **Clean Architecture** and **Repository Pattern**.
 - Implement input validation using Go structs and validation tags (e.g., [go-playground/validator](https://github.com/go-playground/validator)).
 - Use custom error types for wrapping and handling business logic errors.
@@ -87,6 +88,7 @@ tests/
 - Keep `main.go` minimal—delegate to `internal`.
 
 ### 🚫 Patterns to Avoid
+
 - Don’t use global state unless absolutely required.
 - Don’t hardcode config—use environment variables or config files.
 - Don’t panic or exit in library code; return errors instead.
