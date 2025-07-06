@@ -212,6 +212,7 @@ When working with GitHub Copilot on generated tasks:
 - Security testing
 
 ### DevOps Tasks
+
 - CI/CD pipeline setup
 - Deployment configuration
 - Monitoring and logging
