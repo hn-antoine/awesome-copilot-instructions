@@ -40,6 +40,7 @@ tests/
 ## 🧶 Patterns
 
 ### ✅ Patterns to Follow
+
 - Use **Dependency Injection** and **Separation of Concerns**.
 - Validate input using [Zod](https://zod.dev/) or class-validator.
 - Use custom error classes for API and business logic errors.
@@ -49,6 +50,7 @@ tests/
 - Structure logic around clear modules and services.
 
 ### 🚫 Patterns to Avoid
+
 - Avoid using `any` unless explicitly needed.
 - Don’t duplicate logic across controllers and services.
 - Avoid deeply nested callbacks or overly clever code.
@@ -64,6 +66,7 @@ tests/
 - Include coverage reports and snapshot testing for UI.
 
 ## 🧩 Example Prompts
+
 - `Copilot, generate an Express route handler that creates a new user with Zod validation.`
 
 - `Copilot, define a TypeScript interface for a Product with optional description and required id and price.`

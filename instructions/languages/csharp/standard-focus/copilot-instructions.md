@@ -45,17 +45,19 @@ tests/
 ## 🧶 Patterns
 
 ### ✅ Patterns to Follow
+
 - Use Clean Architecture with layered separation.
 - Use Dependency Injection for services and repositories.
 - Use MediatR for CQRS (Commands/Queries).
 - Use FluentValidation for input validation.
 - Map DTOs to domain models using AutoMapper.
-- Use ILogger<T> or Serilog for structured logging.
+- Use `ILogger<T>` or Serilog for structured logging.
 - For APIs:
-  - Use [ApiController], ActionResult<T>, and ProducesResponseType.
+  - Use [ApiController], `ActionResult<T>`, and ProducesResponseType.
   - Handle errors using middleware and Problem Details.
 
 ### 🚫 Patterns to Avoid
+
 - Don’t use static state or service locators.
 - Avoid logic in controllers—delegate to services/handlers.
 - Don’t hardcode config—use appsettings.json and IOptions.
@@ -63,6 +65,7 @@ tests/
 - Avoid fat controllers and God classes.
 
 ## 🧪 Testing Guidelines
+
 - Use xUnit for unit and integration testing.
 - Use Moq or NSubstitute for mocking dependencies.
 - Follow Arrange-Act-Assert pattern in tests.
@@ -70,18 +73,21 @@ tests/
 - Prefer TDD for critical business logic and application services.
 
 ## 🧩 Example Prompts
+
 - `Copilot, generate an ASP.NET Core controller with CRUD endpoints for Product.`
 - `Copilot, implement a MediatR command handler for creating a new order.`
 - `Copilot, create an Entity Framework Core DbContext for a blog application.`
 - `Copilot, write an xUnit test for the CalculateInvoiceTotal method.`
 
 ## 🔁 Iteration & Review
+
 - Copilot output should be reviewed and modified before committing.
 - If code isn’t following these instructions, regenerate with more context or split the task.
 - Use /// XML documentation comments to clarify intent for Copilot and future devs.
 - Use Rider or Visual Studio code inspections to catch violations early.
 
 ## 📚 References
+
 - [Microsoft C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 - [ASP.NET Core Documentation](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-8.0)
 - [Entity Framework Core Docs](https://learn.microsoft.com/en-us/ef/core/)
