@@ -1,10 +1,23 @@
-# Awesome Copilot Instructions [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+<!--lint disable remark-lint:awesome-badge-->
 
+#
+
+<!-- [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) -->
 <div align="center">
   <img src="./imgs/awesome-github-copilot.svg" alt="Awesome Copilot Instructions" height="300">
 </div>
 
 <h4 align="center">✨ A curated list of awesome GitHub copilot-instructions.md files for enhancing your GitHub Copilot AI experience.</h4>
+
+<!--lint enable remark-lint:awesome-badge-->
+
+<p align="center">
+  <a href="hhttps://awesome.re">
+    <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+  </a>
+</p>
+
+<hr>
 
 <hr>
 <p align="center">
