@@ -2,7 +2,7 @@
   "default": true,
   "MD013": false,
   "MD033": {
-    "allowed_elements": ["h1", "h4", "p", "a", "img", "hr", "br", "T"]
+    "allowed_elements": ["h1", "h4", "p", "a", "img", "hr", "br", "div"]
   },
   "MD059": false,
   "MD041": { "front_matter_title": ".*" },
@@ -18,7 +18,7 @@
           "code_blocks": false
         },
         "MD033": {
-          "allowed_elements": ["h1", "h4", "p", "a", "img", "hr", "br"]
+          "allowed_elements": ["h1", "h4", "p", "a", "img", "hr", "br", "div"]
         },
         "MD059": false
       }
