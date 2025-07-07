@@ -19,7 +19,6 @@
 
 <hr>
 
-<hr>
 <p align="center">
  <a href="CONTRIBUTING.md">📖 Contribution Guide</a>
 </p>
