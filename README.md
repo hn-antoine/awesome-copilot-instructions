@@ -1,14 +1,10 @@
-<h1 align="center">
+# Awesome Copilot Instructions [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
+
+<div align="center">
   <img src="./imgs/awesome-github-copilot.svg" alt="Awesome Copilot Instructions" height="300">
-</h1>
+</div>
 
 <h4 align="center">✨ A curated list of awesome GitHub copilot-instructions.md files for enhancing your GitHub Copilot AI experience.</h4>
-
-<p align="center">
-  <a href="https://awesome.re">
-    <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
-  </a>
-</p>
 
 <hr>
 <p align="center">
