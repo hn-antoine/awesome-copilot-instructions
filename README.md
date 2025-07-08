@@ -4,7 +4,7 @@
 
 <!-- [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) -->
 <div align="center">
-  <img src="https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/imgs/awesome-github-copilot.svg" alt="Awesome Copilot Instructions" height="300">
+  <img src="./imgs/awesome-github-copilot.svg" alt="Awesome Copilot Instructions" height="300">
 </div>
 
 <h4 align="center">✨ A curated list of awesome GitHub copilot-instructions.md files for enhancing your GitHub Copilot AI experience.</h4>
