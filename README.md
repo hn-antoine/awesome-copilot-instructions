@@ -1,10 +1,10 @@
-<!--lint disable remark-lint:awesome-badge-->
+<!--lint disable remark-lint:awesome-list-item-->
 
 #
 
 <!-- [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) -->
 <div align="center">
-  <img src="./imgs/awesome-github-copilot.svg" alt="Awesome Copilot Instructions" height="300">
+  <img src="https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/imgs/awesome-github-copilot.svg" alt="Awesome Copilot Instructions" height="300">
 </div>
 
 <h4 align="center">✨ A curated list of awesome GitHub copilot-instructions.md files for enhancing your GitHub Copilot AI experience.</h4>
@@ -47,68 +47,68 @@
 
 #### Language Templates
 
-- [Standard Language Template](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/templates/standard-language/copilot-instructions.md)
+- [Standard Language Template](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/templates/standard-language/copilot-instructions.md)
 
 ### Language & Stack
 
 #### C
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/c/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/c/standard-focus/copilot-instructions.md)
 
 #### C-Sharp
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/csharp/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/csharp/standard-focus/copilot-instructions.md)
 
 #### C++
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/cplusplus/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/cplusplus/standard-focus/copilot-instructions.md)
 
 #### Go
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/go/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/go/standard-focus/copilot-instructions.md)
 
 #### Java
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/java/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/java/standard-focus/copilot-instructions.md)
 
 #### JavaScript
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/javascript/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/javascript/standard-focus/copilot-instructions.md)
 
 #### Kotlin
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/kotlin/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/kotlin/standard-focus/copilot-instructions.md)
 
 #### Lua
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/lua/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/lua/standard-focus/copilot-instructions.md)
 
 #### Python
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/python/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/python/standard-focus/copilot-instructions.md)
 
 #### Rust
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/rust/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/rust/standard-focus/copilot-instructions.md)
 
 #### Swift
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/swift/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/swift/standard-focus/copilot-instructions.md)
 
 #### TypeScript
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/languages/typescript/standard-focus/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/languages/typescript/standard-focus/copilot-instructions.md)
 
 ### Framework / Library
 
 #### Cobra CLI (Go)
 
-- [Charmbracelet Bubbles CLI](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/frameworks/cobra-cli-go/charmbracelet-cli/copilot-instructions.md)
+- [Charmbracelet Bubbles CLI](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/frameworks/cobra-cli-go/charmbracelet-cli/copilot-instructions.md)
 
 #### Node.js (TypeScript)
 
-- [Azure Function App](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/frameworks/nodejs-typescript/azure-function-app/copilot-instructions.md)
-- [Express API](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/frameworks/nodejs-typescript/express-api/copilot-instructions.md)
+- [Azure Function App](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/frameworks/nodejs-typescript/azure-function-app/copilot-instructions.md)
+- [Express API](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/frameworks/nodejs-typescript/express-api/copilot-instructions.md)
 
 ### Tools
 
@@ -116,14 +116,14 @@
 
 ##### Drupal
 
-- [Standard Focus for Drupal 11](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/tools/cms/drupal/11/standard-focus/copilot-instructions.md)
+- [Standard Focus for Drupal 11](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/tools/cms/drupal/11/standard-focus/copilot-instructions.md)
 
 #### Infra as Code (IaC)
 
 ##### Terraform
 
-- [Standard Focus](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/tools/infra-as-code/terraform/standard-focus/copilot-instructions.md)
-- [Atmos](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/tools/infra-as-code/terraform/atmos/copilot-instructions.md)
+- [Standard Focus](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/tools/infra-as-code/terraform/standard-focus/copilot-instructions.md)
+- [Atmos](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/tools/infra-as-code/terraform/atmos/copilot-instructions.md)
 
 ### Workflows
 
@@ -131,9 +131,9 @@
 
 A comprehensive workflow for AI-assisted development featuring structured approaches to planning, task generation, and execution:
 
-- [PRD Creation](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/workflows/ai-development-tasks/prd-creation/prd-creation.instructions.md) - Create detailed Product Requirements Documents. ([prompt](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/workflows/ai-development-tasks/prd-creation/prd-creation.prompt.md))
-- [Task Generation](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/workflows/ai-development-tasks/task-generation/task-generation.instructions.md) - Break PRDs into actionable development tasks. ([prompt](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/workflows/ai-development-tasks/task-generation/task-generation.prompt.md))
-- [Task Execution](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/workflows/ai-development-tasks/task-execution/task-execution.instructions.md) - Systematic task execution with proper testing and git practices. ([prompt](https://github.com/osiris/awesome-copilot-instructions/blob/main/instructions/workflows/ai-development-tasks/task-execution/task-execution.prompt.md))
+- [PRD Creation](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/workflows/ai-development-tasks/prd-creation/prd-creation.instructions.md) - Create detailed Product Requirements Documents. ([prompt](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/workflows/ai-development-tasks/prd-creation/prd-creation.prompt.md))
+- [Task Generation](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/workflows/ai-development-tasks/task-generation/task-generation.instructions.md) - Break PRDs into actionable development tasks. ([prompt](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/workflows/ai-development-tasks/task-generation/task-generation.prompt.md))
+- [Task Execution](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/workflows/ai-development-tasks/task-execution/task-execution.instructions.md) - Systematic task execution with proper testing and git practices. ([prompt](https://github.com/Code-and-Sorts/awesome-copilot-instructions/tree/main/instructions/workflows/ai-development-tasks/task-execution/task-execution.prompt.md))
 
 ## How to Use
 
