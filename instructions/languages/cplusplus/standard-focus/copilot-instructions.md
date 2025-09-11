@@ -3,11 +3,11 @@
 These instructions define how GitHub Copilot should assist with this project. The goal is to ensure consistent, high-quality code generation aligned with our conventions, stack, and best practices.
 
 ## 🧠 Context
-
-- **Project Type**: System Library / Game Engine / Cross-Platform App / CLI Tool
+ok
+- **Project Type**: System Library / Cross-Platform App / Distributed Systems / CLI Tool
 - **Language**: C++
-- **Framework / Libraries**: STL / Boost / Qt / CMake / GoogleTest
-- **Architecture**: Modular / Layered / ECS / RAII / OOP / Component-Based
+- **Framework / Libraries**: STL / CMake / GoogleTest
+- **Architecture**: Modular / Layered / RAII / OOP / Component-Based
 
 ## 🔧 General Guidelines
 
@@ -16,8 +16,8 @@ These instructions define how GitHub Copilot should assist with this project. Th
 - Favor smart pointers (`std::unique_ptr`, `std::shared_ptr`) over raw pointers.
 - Use `const`, `constexpr`, and `noexcept` to express intent.
 - Keep headers clean—avoid logic in header files.
-- Use `clang-format` or `.editorconfig` for consistent formatting.
-- Favor readability, modularity, and exception safety.
+- Use `clang-format` for consistent formatting.
+- Favor readability, modularity, reusability, performant, and exception safety.
 
 ## 📁 File Structure
 
@@ -25,14 +25,7 @@ Use this structure as a guide when creating or updating files:
 
 ```text
 src/
-  core/
-  engine/
-  components/
-  systems/
-  utils/
-  config/
 include/
-  project_name/
 tests/
   unit/
   integration/
@@ -51,14 +44,15 @@ build/
 - Use assertions (`assert()`) and logging macros for debug checks.
 - Use CMake targets and `target_include_directories` for modular build config.
 - Use `std::optional` or `std::variant` for nullable/union-like types.
+- For multithreading, prefer lock-free mechanism for best performance
 
 ### 🚫 Patterns to Avoid
 
 - Don’t use raw pointers for ownership unless performance-critical and documented.
 - Avoid macros for constants—prefer `constexpr` or `inline` `const`.
 - Don’t put implementation logic in header files unless using templates.
-- Avoid global variables unless necessary and wrapped in a namespace or singleton.
-- Don’t overuse inheritance; prefer composition.
+- Avoid global variables unless necessary and wrapped in a namespace or singleton, or better in a context/profile if there is a chance of having simultaneously different values for different inputs.
+- Don’t overuse inheritance; prefer composition or other pattern which allow dependency injection
 - Avoid manual memory management unless absolutely required.
 
 ## 🧪 Testing Guidelines
@@ -67,6 +61,7 @@ build/
 - Isolate dependencies using mock interfaces or adapters.
 - Test core logic in isolation from I/O or rendering subsystems.
 - Use `CMake` to register and run tests via `ctest`.
+- Consider to use build wrapper for sonar, sanitize for memory leak, etc...
 - Test constructors, copy/move semantics, and edge cases.
 
 ## 🧩 Example Prompts
