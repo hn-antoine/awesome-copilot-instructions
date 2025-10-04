@@ -18,6 +18,7 @@ ok
 - Keep headers clean—avoid logic in header files.
 - Use `clang-format` for consistent formatting.
 - Favor readability, modularity, reusability, performant, and exception safety.
+- Use **CamelCase** for naming classes, structs, functions, and variables as an industry standard.
 
 ## 📁 File Structure
 
