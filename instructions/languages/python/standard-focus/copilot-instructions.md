@@ -13,10 +13,11 @@ These instructions define how GitHub Copilot should assist with this project. Th
 
 - Use Pythonic patterns (PEP8, PEP257).
 - Prefer named functions and class-based structures over inline lambdas.
-- Use type hints where applicable (`typing` module).
+- Use type hints where applicable (`typing` module) for method signature only.
 - Follow black or isort for formatting and import order.
 - Use meaningful naming; avoid cryptic variables.
 - Emphasize simplicity, readability, and DRY principles.
+- use snake case for naming convention as per industry standard. For FastAPI routes provide translation to support both camel case and snake case because it will interface with typecript and javascript.
 
 ## 📁 File Structure
 
